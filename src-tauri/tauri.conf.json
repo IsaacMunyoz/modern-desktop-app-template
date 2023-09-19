@@ -4,7 +4,7 @@
     "version": "../package.json"
   },
   "build": {
-    "beforeDevCommand": "yarn start",
+    "beforeDevCommand": "npm dev",
     "beforeBuildCommand": "npm run tauri build",
     "devPath": "http://localhost:1420",
     "distDir": "../build",
