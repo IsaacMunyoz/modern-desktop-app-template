@@ -5,7 +5,7 @@
   },
   "build": {
     "beforeDevCommand": "yarn start",
-    "beforeBuildCommand": "yarn build",
+    "beforeBuildCommand": "npm build",
     "devPath": "http://localhost:1420",
     "distDir": "../build",
     "withGlobalTauri": false
