@@ -5,7 +5,7 @@
   },
   "build": {
     "beforeDevCommand": "yarn start",
-    "beforeBuildCommand": "npm build",
+    "beforeBuildCommand": "npm run tauri build",
     "devPath": "http://localhost:1420",
     "distDir": "../build",
     "withGlobalTauri": false
@@ -82,7 +82,11 @@
         "removeDir": false,
         "removeFile": false,
         "renameFile": false,
-        "scope": ["$APP/*", "$DOCUMENT/*", "$DOWNLOAD/*"],
+        "scope": [
+          "$APP/*",
+          "$DOCUMENT/*",
+          "$DOWNLOAD/*"
+        ],
         "writeFile": true
       },
       "globalShortcut": {
